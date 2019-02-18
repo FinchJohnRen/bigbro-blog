@@ -379,10 +379,10 @@ changyan:
 # You can get your appid and appkey from https://leancloud.cn
 # more info please open https://valine.js.org
 valine:
-  enable: false
+  enable: true
   appid: NaLKJs4H0IqT2JGrQwjuPlRL-gzGzoHsz
   appkey: yBP4a4lLy9FbF2Hwk2efsGn2
-  notify: ture # mail notifier , https://github.com/xCss/Valine/wiki
+  notify: true # mail notifier , https://github.com/xCss/Valine/wiki
   verify: false # Verification code
   placeholder: ヾﾉ≧∀≦)o欢迎留言 # comment box placeholder
   avatar: wavatar # gravatar style
