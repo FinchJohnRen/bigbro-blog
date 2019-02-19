@@ -1,4 +1,29 @@
 // Custom styles.
+// 左上角标题
 .site-meta
   background-image: url(https://ws1.sinaimg.cn/large/694830ebgy1fh3pyd05klj21kw0f2dy2.jpg);
   background-position: 30% 6%;
+
+// 底部红心
+.love-animate
+  animation: iconAnimate 1.33s ease-in-out infinite;
+  color:#a60000
+
+@keyframes iconAnimate 
+  0%, 100% {
+    transform: scale(1);
+  }
+  10%, 30% {
+    transform: scale(0.9);
+  }
+  20%, 40%, 60%, 80% {
+    transform: scale(1.1);
+  }
+  50%, 70% {
+    transform: scale(1.1);
+  }
+
+// 按钮
+.btn:hover
+  box-shadow: 3px 5px 5px 0px #dddddd;
+  border-radius: 5px;

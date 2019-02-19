@@ -345,12 +345,22 @@
         {% include 'reward.swig' %}
       </div>
     {% endif %}
-
     {% if theme.post_copyright.enable and not is_index %}
       <div>
         {% include 'post-copyright.swig' with { post: post } %}
       </div>
     {% endif %}
+    
+    <!--文本结束-->
+    <div style="margin: 5px 0;">
+        {% if not is_index %}
+            <div style="text-align:center;color: #ccc;font-size:14px;">
+            ﹋﹊﹋﹊﹋﹊﹋
+            <span style="vertical-align: text-bottom;">文本结束 <span class="with-love love-animate" style="opacity: 0.5;"><i class="fa fa-heartbeat"></i></span> 感谢阅读</span>
+            ﹋﹊﹋﹊﹋﹊﹋
+            </div>
+        {% endif %}
+    </div>
 
     <footer class="post-footer">
       {% if post.tags and post.tags.length and not is_index %}
